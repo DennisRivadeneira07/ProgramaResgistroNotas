@@ -77,6 +77,22 @@ public class Prueba {
         System.out.println("La calificacion del promer examen es :"+ex1);
         System.out.println("El aprovechamiento 2 es :"+apro2);
         System.out.println("La calificacion del segundo examen es :"+ex2);
-        
+        person.setCodigo(3);
+        person.setCedula("1150536033");
+        person.setCorreo("drivadeneriac2@est.ups.edu.ec");
+        person.setDireccion("Av.Americas");
+        person.setSede(cuenca);
+        person.setTelefono("0999886175");
+        int cod1=person.getCodigo();
+        String cedu=person.getCedula();
+        String corr=person.getCorreo();
+        String tel=person.getTelefono();
+        String dir=person.getDireccion();
+        Sede sed=person.getSede();
+        System.out.println("El codigo de persona es :"+cod1);
+        System.out.println("El correo de la persona es :"+corr);
+        System.out.println("El telefono de la persona es :"+tel);
+        System.out.println("La direccion de la persona es :"+dir);
+    
     }
 }
