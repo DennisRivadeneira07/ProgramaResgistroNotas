@@ -13,12 +13,15 @@ import ec.edu.ups.clases.Materia;
 import ec.edu.ups.clases.Persona;
 import ec.edu.ups.clases.Profesor;
 import ec.edu.ups.clases.Sede;
+import java.util.List;
 
 /**
  *
  * @author LENOVO
  */
 public class Prueba {
+    public static void main(String []args)
+    {
     Carrera computacion=new Carrera() ;
     Estudiante estu=new Estudiante();
     Grupo grupo1=new Grupo();
@@ -27,7 +30,13 @@ public class Prueba {
     Persona person=new Persona();
     Profesor profe=new Profesor();
     Sede cuenca=new Sede();
+    System.out.println("CARRERA");
+    computacion.setCodigo(3);
+    List<Materia> programacionAplicada = null;
+    List<Materia> materia = programacionAplicada;
+    computacion.setMateria(materia);
+    computacion.setNombre("Computación");
     
-    computacion.setCodigo(1);
     
+}
 }

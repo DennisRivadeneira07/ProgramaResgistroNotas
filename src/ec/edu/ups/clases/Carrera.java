@@ -16,7 +16,7 @@ public class Carrera {
     private String nombre;
     private List<Materia> materia;
     
-     public void setCodigo(int   codigo){
+     public void setCodigo(int codigo){
         this.codigo=codigo;
     }
     public void setNombre(String nombre){
