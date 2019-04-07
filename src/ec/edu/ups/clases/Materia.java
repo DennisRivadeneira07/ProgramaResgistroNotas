@@ -18,7 +18,14 @@ public class Materia {
     private int nivel;
     private Grupo grupo;
     private Profesor profesor;
-    
+    public Materia(){
+    }
+
+    public Materia(int codigo, String nombre, int nivel) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.nivel = nivel;
+    }
     public void setCodigo(int codigo){
         this.codigo=codigo;
     }

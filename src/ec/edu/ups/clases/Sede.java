@@ -18,9 +18,21 @@ public class Sede {
     private String direccion;
     private String telefono;
     private List<Carrera> carrera;
+    public Carrera agregarCarrera;
+    public Sede(){
+        
+    }
+
+    public Sede(int codigo, String nombre, String direccion, String telefono) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.telefono = telefono;
+    }
     
     public void setCodigo(int codigo){
         this.codigo=codigo;
+       
     }
     public void setNombre(String nombre){
         this.nombre=nombre;

@@ -17,7 +17,18 @@ public class Persona {
     private String direccion;
     private String correo;
     private Sede sede;
+    public Persona(){
+        
+    }
+    public Persona(int codigo,String nombre,String cedula,String telefono,String direccion,String correo,String sede){   
+      
     
+    }
+    public Persona(int codigo, String nombre, String cedula) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.cedula = cedula;
+    }
     public void setCodigo(int codigo){
         this.codigo=codigo;
     }

@@ -23,7 +23,7 @@ import java.util.List;
 public class Prueba {
 
     public static void main(String[] args) {
-        List<String> lista = new ArrayList<>();
+        /*  List<String> lista = new ArrayList<>();
         Carrera computacion = new Carrera();
         Estudiante estu = new Estudiante();
         Grupo grupo1 = new Grupo();
@@ -93,6 +93,47 @@ public class Prueba {
         System.out.println("El correo de la persona es :"+corr);
         System.out.println("El telefono de la persona es :"+tel);
         System.out.println("La direccion de la persona es :"+dir);
-    
+    }*/
+        //crear 6 materias 
+        //crear 3 materias
+        //crear 2 estudiantes
+        //agregar 2 materias a cada carrera 
+        //crear un alista para cada estudiante  con un metodo lista 
+        //a cada materia agregar a1 grupo y un profesor llamando a los setgrupo
+
+        Sede sedeCuenca = new Sede(1, "cuenca", "calle vieja", "0999886175");
+        //sedeCuenca.Carrera agregarCarrera = new Carrera();
+
+        Carrera computacion = new Carrera(1, "computacion");
+        Carrera telematica = new Carrera(2, "telematica");
+
+        Materia progra = new Materia(1, "Programación", 3);
+        Materia MatematicasA = new Materia(2, "Matematicas Avanzadas", 3);
+        Materia Estructura = new Materia(3, "Estructura de Datos", 3);
+
+        Grupo grupo1 = new Grupo();
+        System.out.println("GRUPO");
+        grupo1.setCodigo(2);
+        grupo1.setCupo(45);
+        grupo1.setNombre("Grupop 1");
+
+        Profesor profe1 = new Profesor("Ingeniero", 3000, "Profesor de Progrmación");
+        Profesor profe2 = new Profesor("Ingeniero", 3000, "Profesora de Estructura de Datos");
+
+        Estudiante estu1 = new Estudiante(telematica, 2, "Dennis Rivadeneira", "1150536033");
+        Estudiante estu2 = new Estudiante(computacion, 2, "Andrés Cabrera ", "1150536033");
+
+        List<String> listaEstu = new ArrayList<>();
+        listaEstu.add("");
+        listaEstu.add("");
+        listaEstu.add("");
+        listaEstu.add("");
+        listaEstu.add("");
+
+        for (int i = 0; i < listaEstu.size(); i++) {
+            String valor = listaEstu.get(i);
+            System.out.println(valor);
+        }
+
     }
 }

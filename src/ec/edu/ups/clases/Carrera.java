@@ -6,16 +6,22 @@
 package ec.edu.ups.clases;
 
 import java.util.List;
-
-/**
- *
- * @author LENOVO
- */
 public class Carrera {
+    @Override
+    public String toString() {
+        return "Carrera{" + "codigo=" + codigo + ", nombre=" + nombre + ", materia=" + materia + '}';
+    }
     private int codigo;
     private String nombre;
     private List<Materia> materia;
     
+    public Carrera(){ 
+        
+    }
+    public Carrera(int codigo, String nombre) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+    }
      public void setCodigo(int codigo){
         this.codigo=codigo;
     }
@@ -35,9 +41,7 @@ public class Carrera {
     }
     public  List<Materia> getMateria(){
         return this.materia;
-    
-    }
-    
+    } 
 }
 
     

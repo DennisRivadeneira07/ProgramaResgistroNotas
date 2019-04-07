@@ -9,10 +9,22 @@ package ec.edu.ups.clases;
  *
  * @author LENOVO
  */
-public class Profesor {
+public class Profesor extends Persona {
+
+    
     private String titulo;
     private double salario;
     private String cargo;
+    public Profesor(){
+        
+    }
+
+    public Profesor(String titulo, double salario, String cargo) {
+        this.titulo = titulo;
+        this.salario = salario;
+        this.cargo = cargo;
+        
+    }
     
     public void setTitulo(String  titulo){
         this.titulo=titulo;
@@ -34,5 +46,13 @@ public class Profesor {
         return this.cargo;
     
     }
+    public double getSalario(int horasTrabajadas , double ValorPorHora){
+        return salario +(horasTrabajadas*ValorPorHora);
+    }
+   
+
+        
+        
+    }
     
-}
+

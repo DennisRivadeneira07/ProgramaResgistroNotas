@@ -9,14 +9,44 @@ package ec.edu.ups.clases;
  *
  * @author LENOVO
  */
-public class Estudiante {
+public class Estudiante extends Persona {
+
     private Carrera carrera;
-    
-    public void setCarrera(Carrera carrera){
-        this.carrera=carrera;
+
+    public Estudiante() {
+
     }
-    public Carrera  getCarrera(){
+
+    public Estudiante(Carrera carrera, int codigo, String nombre, String cedula) {
+        super(codigo, nombre, cedula);
+        this.carrera = carrera;
+    }
+    
+
+    public Estudiante(int codigo) {
+        this.setCodigo(codigo);
+    }
+
+    public Estudiante(int codigo, String nombre, String cedula, String telefono, String direccion) {
+        super(codigo, nombre, cedula);
+    }
+
+    public Estudiante(Carrera carrera, int codigo, String nombre, String cedula, String telefono, String direccion, String correo, String sede) {
+        super(codigo, nombre, cedula, telefono, direccion, correo, sede);
+        this.carrera = carrera;
+    }
+    
+
+    public Estudiante(Carrera carrera) {
+        this.carrera = carrera;
+    }
+
+    public void setCarrera(Carrera carrera) {
+        this.carrera = carrera;
+    }
+
+    public Carrera getCarrera() {
         return this.carrera;
     }
-    
+
 }
